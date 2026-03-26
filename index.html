@@ -2075,6 +2075,7 @@
             contextOpen.style.display = fileInfo.type === 'dir' || fileInfo.type === 'repo' ? 'flex' : 'none';
             contextDownload.style.display = fileInfo.type === 'file' ? 'flex' : 'none';
             contextRename.style.display = fileInfo.type === 'file' || fileInfo.type === 'dir' ? 'flex' : 'none';
+            contextDelete.style.display = fileInfo.type === 'file' ? 'flex' : 'none';
             contextCopyLink.style.display = fileInfo.type === 'file' ? 'flex' : 'none';
             contextCopyProxyLink.style.display = fileInfo.type === 'file' ? 'flex' : 'none';
 
