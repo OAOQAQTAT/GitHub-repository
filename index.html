@@ -2452,7 +2452,7 @@
                     }
 
                     const repositoriesData = data.data.viewer.repositories;
-                    allRepos = allRepos.concat(repositoriesData.nodes.map(repo => ({
+                    allRepos = allRepos.concat(repositoriesData.nodes.filter(repo => repo.isPrivate).map(repo => ({
                         name: repo.name,
                         type: 'repo',
                         path: `${repo.owner.login}/${repo.name}`,
