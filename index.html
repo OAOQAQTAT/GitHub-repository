@@ -3452,7 +3452,7 @@
                         headers: {
                             'Authorization': `token ${githubToken}`,
                             'Accept': 'application/vnd.github.v3+json',
-                            'Cache-Control': 'no-cache'
+                            'If-None-Match': '"never-match"'
                         }
                     }
                 );
